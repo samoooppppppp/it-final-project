@@ -1,96 +1,17 @@
-<html>
-
-<head>
-    <title>Contact Us - Himalayan Java</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            padding: 0;
-            background-color: #F2E9E4;
-            background-image: url(Premium\ Photo\ _\ Essential\ of\ coffee\ bean.jpeg);
-            background-size: cover;
-        }
-
-        .navbar {
-            background-color: #190e02;
-            padding: 15px 20px;
-            text-align: right;
-            position: inherit;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .navbar a {
-            color: #f4eded;
-            text-decoration: none;
-            margin: 15px;
-            font-size: 18px;
-        }
-
-        .navbar a:hover {
-            color: brown;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: 200px;
-            padding: 10px;
-            background-color: rgba(3, 3, 3, 0.8); 
-            border-radius: 20px;
-        }
-
-        h1 {
-            color: #cfc9c9;
-            text-align: center;
-        }
-
-        label {
-            color: #ef7e0d;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box;
-        }
-        .footer {
-            background-color: #8C6239;
-            color: #FFFFFF;
-            text-align: center;
-            padding: 15px 0;
-            bottom: 0;
-            width: 100%;
-    }
-    #coffee-cup {
-            width: 80px;
-            margin-bottom: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-</style
 </head>
 
 <body>
     <div class="navbar">
-        <a href="inex.html">Home</a>
-        <a href="products.html">products</a>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
         <a href="aboutus.html">About Us</a>
-        <a href="services.html">our services</a></li>
+        <a href="services.html">Our Services</a>
     </div>
 
     <div class="container">
-        <img src="FLAVORED COFFEE _ How Do They Flavor Coffee_.jpeg"> 
+        <img src="FLAVORED COFFEE _ How Do They Flavor Coffee_.jpeg" alt="Flavored Coffee">
         <h1>Contact Us</h1>
-        <form action="" method="POST">
+        <form id="contactForm" action="" method="POST">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br>
             <label for="email">Email:</label><br>
@@ -100,9 +21,24 @@
             <input type="submit" value="Submit">
         </form>
     </div>
-  <div class="footer">
+
+    <div class="footer">
         <p>&copy; 2024 Himalayan Java. All rights reserved.</p>
     </div>
+
+    <script>
+        // Function to handle form submission
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Show alert
+            alert('Form submitted!'); // You can customize this message
+            
+            // Optionally, you can also reset the form after submission
+            // this.reset();
+        });
+    </script>
 </body>
 
 </html>
